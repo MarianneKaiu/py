@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh '''
         echo "Jenkins va installer les deps"
-        pip install flask
+        pip3 install flask
         python index.py
         echo "fin"
         '''
