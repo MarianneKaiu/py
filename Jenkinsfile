@@ -10,7 +10,10 @@ pipeline {
       }
       steps {
         sh '''
-        echo "helloww
+        echo "Jenkins va installer les deps"
+        pip install flask
+        python index.py
+        echo "fin"
         '''
       }
     }
