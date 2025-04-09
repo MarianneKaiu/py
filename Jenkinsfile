@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh '''
         echo "Jenkins va installer les deps"
-        pip3 install -r requuirements.txt
+        pip3 install -r requirements.txt
         python index.py
         echo "fin"
         '''
